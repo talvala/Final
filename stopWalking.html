@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="includes/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Open+Sans|Roboto" rel="stylesheet">
+    <title>Connect Your Mobile</title>
+</head>
+<body>
+    <header>
+        <section>
+            <nav>
+                <ul id="logged_menu">
+                    <li><a href="#"  id="myaccount"></a></li>
+                    <li><a href="#"  id="help"></a></li>
+                    <li><a href="#"  id="chat"> </a></li>
+                    <li><a href="configure.html"  id="settings"> </a></li>
+                </ul>
+            </nav>
+            <span id="logo"><a href="startWalking.html"></a> </span>
+        </section>
+    </header>
+
+    <main>
+        <section id="container_stop">
+            <h1> Currently Watching </h1>
+            <h3> Live Preview </h3>
+        </section>
+        <section id="live_preview"></section>
+        <section id="stop_btn"></section>
+        <script >
+          document.getElementById("stop_btn").onclick = function () {
+            location.href = "startWalking.html";
+          };
+        </script>
+    </main>
+</body>
+</html>

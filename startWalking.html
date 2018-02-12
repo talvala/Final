@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="includes/newstyle.css">
+    <script src="includes/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Protection Settings</title>
+</head>
+<div id="wrapper" >
+    <header>
+        <section>
+            <span id="status"></span>
+            <span id="user_welcome"> Hello, <i><b>Moshe</b></i></span>
+            <span id="logo"><a href="startWalking.html"></a> </span>
+        </section>
+    </header>
+    <section class="menu">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+
+                <!--
+                Some spans to act as a hamburger.
+
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu">
+                    <h3>Sync Glasses</h3>
+                    <a href="index.html"><li>choose plan</li></a>
+                    <a href="premium.html"><li>premium</li></a>
+                    <a href="configure.html"><li>configure</li></a>
+                    <h3> Management </h3>
+                    <a href="inHouse1.html"><li>in-house setting</li></a>
+                    <a href="addRoutes1.html"><li>add routes</li></a>
+                    <a href="historyLogs.html"><li>history and logs</li></a>
+                    <h3> My Profile</h3>
+                    <a href="#"><li>Log Out</li></a>
+                    <a href="#"><li>Help</li></a>
+                </ul>
+            </div>
+        </nav>
+        <a href="inHouse2.php"><span id="settings_menu"></span></a>
+    </section>
+    <main>
+        <span id="title_ready"> Start New Session </span>
+        <input type="text" id="heading" name="where" placeholder="Where are you heading?">
+        <section id="play">
+        </section>
+        <section id="start_btn"></section>
+        <script >
+          document.getElementById("play").onclick = function () {
+            location.href = "onlineWalking.html";
+          };
+        </script>
+
+    <section class="history">
+        <h3> Recent History</h3>
+        <a href="histroty.html"><button id="show_rec">show recommended</button></a> <a href="historyLogs.html"><button id="view_all"> view all </button></a>
+       <fieldset> Work <span class="date"> (27/09/16)</span><span class="numAlerts"> 562 Alerts <a href="#"> ></a></span></fieldset>
+        <fieldset> Home <span class="date"> (27/09/16)</span><span class="numAlerts"> 562 Alerts <a href="#"> ></a></span></fieldset>
+        <fieldset> Parents <span class="date"> (27/09/16)</span><span class="numAlerts"> 562 Alerts <a href="#"> ></a></span></fieldset>
+        <fieldset> Iben Gabirol 87 <span class="date"> (27/09/16)</span><span class="numAlerts"> 562 Alerts <a href="#"> ></a></span></fieldset>
+        <fieldset> Work <span class="date"> (27/09/16)</span><span class="numAlerts"> 562 Alerts<a href="#"> ></a></span></fieldset>
+
+    </section>
+    </main>
+</div>
+<script>
+
+</script>
+</body>
+</html>

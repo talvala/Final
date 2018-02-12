@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="includes/newstyle.css">
+    <script src="includes/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Protection Settings</title>
+</head>
+<body>
+<div>
+    <header>
+        <section>
+            <span id="walking"></span>
+            <span id="user_welcome"> Hello, <i><b>Moshe</b></i></span>
+            <span id="logo"><a href="startWalking.html"></a> </span>
+        </section>
+    </header>
+
+    <section class="menu">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+
+                <!--
+                Some spans to act as a hamburger.
+
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu">
+                    <h3>Sync Glasses</h3>
+                    <a href="index"><li>choose plan</li></a>
+                    <a href="premium.html"><li>premium</li></a>
+                    <a href="configure.html"><li>configure</li></a>
+                    <h3> Management </h3>
+                    <a href="inHouse2.php"><li>in-house setting</li></a>
+                    <a href="addRoutes1.html"><li>add routes</li></a>
+                    <a href="historyLogs.html"><li>history and logs</li></a>
+                    <h3> My Profile</h3>
+                    <a href="#"><li>Log Out</li></a>
+                    <a href="#"><li>Help</li></a>
+                </ul>
+            </div>
+        </nav>
+        <span id="add_alert" onclick="showalerts()">
+            </span>
+        <div id="addAlert">
+            <span class="good"></span>
+            <span class="bad"></span>
+            <span>     <input type="range" min="1" max="50" value="25" class="slider" id="myRange">
+               <span class="addwhite"></span>
+               </span>
+            <section> show map
+                <a href="map.html"><span id="showmap"> </span></a>
+            </section>
+        </div>
+        <a href="inHouse2.php"><span id="settings_menu"></span></a>
+    </section>
+
+
+
+
+    <section id="walking_info">
+        <p> <b>Heading:</b> Shaula St., Tel Aviv</p>
+        <p> <b>Duration:</b> 33:19:03</p>
+        <p id="total"><b> Total Alerts:</b> 308</p>
+    </section>
+    <section>
+        <span id="screen"> </span>
+    </section>
+    <section id="handle_walk">
+        <a href="pause.html"><span id="pause"></span></a>
+      <a href="stop.html">  <span id="stop"></span></a>
+    </section>
+    <aside id="ow_note">
+        <span id="note"></span>
+        <p >Pressing on STOP button will end the session</p>
+    </aside>
+</div>
+<script>
+  function showalerts() {
+    var x = document.getElementById("addAlert");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>
