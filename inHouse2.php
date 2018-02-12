@@ -66,7 +66,7 @@ $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 <section class="responsive">
     <a href="addRoutes1.html" class="save">Save&nbsp</a>
 </section>
-    <a href="inHouse1.php" class="cancel">Cancel</a>
+    <a href="inHouse1.html" class="cancel">Cancel</a>
 <footer> 
 </footer>
 </body>
